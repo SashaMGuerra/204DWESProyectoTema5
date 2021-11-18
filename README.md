@@ -26,3 +26,4 @@ Libreria de funciones para validar los diferentes campos de un formulario
 * comprobarMinTamanio()
 * validarElementoEnLista()
 * validarTelefono()
+* validarSeleccion()
