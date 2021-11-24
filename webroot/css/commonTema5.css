@@ -7,6 +7,9 @@ body{
     margin: 0;
     font-family: sans-serif;
 }
+header{
+    text-align: center;
+}
 header, main{
     margin: 5px;
 }

@@ -1,0 +1,18 @@
+/* 
+    Created on : 24 nov. 2021, 9:20:40
+    Author     : Sasha
+*/
+
+table{
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+table img{
+    width: 50px;
+}
+
+td{
+    border: 3px solid black;
+}
