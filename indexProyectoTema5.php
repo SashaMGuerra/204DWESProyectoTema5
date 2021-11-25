@@ -19,11 +19,15 @@
         <main>
             <table>
                 <tr>
-                    <td class="enunciado">Mostrar el contenido de las variables superglobales y phpinfo().</td>
-                    <td>
-                        <a href="codigoPHP/practica0.php"><img src="webroot/media/img/execute-icon.jpg" alt=""/></a>
-                        <a href="mostrarcodigo/mostrarCodigo0.php"><img src="webroot/media/img/doc_icon.png" alt=""/></a>
-                    </td>
+                    <th>Enunciado</th>
+                    <th>Ejecutar</th>
+                    <th>Mostrar</th>
+                </tr>
+                <tr>
+                    <td class="enunciado">0. Mostrar el contenido de las variables superglobales y phpinfo().</td>
+                    <td><a href="codigoPHP/practica0.php"><img src="webroot/media/img/execute-icon.jpg" alt=""/></a></td>
+                    <td><a href="mostrarcodigo/mostrarCodigo0.php"><img src="webroot/media/img/doc_icon.png" alt=""/></a></td>
+                    
                 </tr>
             </table>
         </main>

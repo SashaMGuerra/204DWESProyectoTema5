@@ -7,12 +7,20 @@ table{
     margin: auto;
     max-width: 1000px;
     width: 100%;
+    border-collapse: collapse;
 }
 
 table img{
+    display: block;
+    margin: auto;
     width: 50px;
+    padding: 5px 0;
 }
 
-td{
-    border: 3px solid black;
+td.enunciado{
+    padding-left: 15px;
+}
+
+table tr:not(:first-child) > *{
+    border-bottom: 3px solid gainsboro;
 }
