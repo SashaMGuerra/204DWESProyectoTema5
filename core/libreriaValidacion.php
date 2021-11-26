@@ -481,32 +481,6 @@ class validacionFormularios {  //ELIMINA EL METODO VALIDATEDATE Y LO INCLUYE EN 
         }
         return $mensajeError; 
     }
-    
-    /**
-     * Función validarSeleccion
-     * 
-     * Función que comprueba si se ha seleccionado alguna de las opciones en un 
-     * elemento de opciones múltiples (input radio, listas desplegables).
-     * 
-     * En realidad utiliza la función comprobarNoVacio para devolver un mensaje
-     * de error más adecuado a las listas de opciones.
-     * 
-     * @author Isabel Martínez Guerra
-     * @version 1.0 Creación de la función.
-     * @since 2021-10-26
-     * @param string $seleccion value del input que se va a comprobar.
-     * @param boolean $obligatorio Valor booleano indicado mediante 1, si es obligatorio,
-     * o 0 si no lo es.
-     * @return null|string Devuelve null si es correcto o un mensaje de error
-     * si no se ha seleccionado ninguna opción.
-     */
-    public static function validarSeleccion($seleccion, $obligatorio = 1){
-        $mensajeError = null;
-        if($obligatorio && !is_null(self::comprobarNoVacio($seleccion))){
-            $mensajeError = 'No se ha hecho ninguna selección.';
-        }
-        return $mensajeError;
-    }
 }
 
 ?>
