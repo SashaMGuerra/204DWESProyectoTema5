@@ -1,7 +1,7 @@
 /* Inserción en tablas */
 USE DB204DWESProyectoTema5;
 
-INSERT INTO Usuario VALUES
-('developer1', 'Desarrollador 1', 'paso1', null),
-('developer2', 'Desarrollador 2', 'paso2', null),
-('developer3', 'Desarrollador 3', 'paso3', null);
+INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
+('usuario1', 'paso', 'Primer Usuario'),
+('usuario2', 'paso', 'Segundo Usuario'),
+('admin1', 'paso', 'Administrador1');
