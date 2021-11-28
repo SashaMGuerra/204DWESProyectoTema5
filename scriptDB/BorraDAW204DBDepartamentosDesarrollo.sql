@@ -1,5 +1,12 @@
+/**
+ * Author:  Isabel Martínez Guerra
+ * Fecha de creación: 28/11/2021
+
+ * Script de eliminación de la base de datos y usuario.
+ */
+
 /* Eliminación de la base de datos */
-DROP DATABASE DB204DWESProyectoTema5;
+DROP DATABASE IF EXISTS DB204DWESProyectoTema5;
 
 /* Eliminación del usuario */
-DROP USER 'user204DWESProyectoTema5'@'%';
+DROP USER IF EXISTS 'User204DWESProyectoTema5'@'%';

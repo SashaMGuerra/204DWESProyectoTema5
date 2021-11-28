@@ -7,13 +7,21 @@
  * Control de acceso con identificación de usuario basado en header();
  */
 
-
-if (!isset($_SERVER['PHP_AUTH_USER']) || ($_SERVER['PHP_AUTH_USER']!='admin' && $_SERVER['PHP_AUTH_USER']!='paso')) {
+/**
+ * Si no se ha introducido ningún usuario, o si la combinación de usuario y 
+ * contraseña no corresponde a "admin" y "paso", pide introducirse.
+ */
+if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER']!='admin' || $_SERVER['PHP_AUTH_PW']!='paso') {
     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
     header('HTTP/1.0 401 Unauthorized'); // Envía un error de acceso no autorizado.
     echo "Usuario no reconocido!";
-    exit;
+    exit; // Tras dar error e indicar que el usuario es incorrecto, sale.
 }
+
+/**
+ * Si el usuario y clave introducidos son correctos, muestra la información
+ * introducido.
+ */
 else{
 
 
@@ -31,16 +39,16 @@ else{
     </head>
     <body>
         <header>
-            <?php include_once './elementoBtVolver.php'; // Botón de regreso, ya formateado    ?>
+            <?php include_once './elementoBtVolver.php'; // Botón de regreso ?>
             <h1>Control de acceso con identificación de usuario: header()</h1>
         </header>
         <main>
             <?php
-                echo "Nombre de usuario: " . $_SERVER['PHP_AUTH_USER'] . "<br />";
-                echo "Contraseña: " . $_SERVER['PHP_AUTH_PW'] . "<br />";
+                echo "<div>Nombre de usuario: " . $_SERVER['PHP_AUTH_USER'] . "</div>";
+                echo "<div>Contraseña: " . $_SERVER['PHP_AUTH_PW'] . "</div>";
             ?>
         </main>
-        <?php include_once './elementoFooter.php'; // Footer, ya formateado  ?>
+        <?php include_once './elementoFooter.php'; // Footer ?>
     </body>
 </html>
 <?php

@@ -8,6 +8,7 @@ table{
     max-width: 1000px;
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 table img{
@@ -23,4 +24,12 @@ td.enunciado{
 
 table tr:not(:first-child) > *{
     border-bottom: 3px solid gainsboro;
+}
+
+div.db{
+    text-align: center;
+}
+div.db > *{
+    margin: 5px;
+    padding: 0;
 }
