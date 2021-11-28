@@ -11,7 +11,7 @@
  * Si no se ha introducido ningún usuario, o si la combinación de usuario y 
  * contraseña no corresponde a "admin" y "paso", pide introducirse.
  */
-if (!isset($_SERVER['PHP_AUTH_USER']) || ($_SERVER['PHP_AUTH_USER']!='admin' && $_SERVER['PHP_AUTH_USER']!='paso')) {
+if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER']!='admin' || $_SERVER['PHP_AUTH_PW']!='paso') {
     header('WWW-Authenticate: Basic Realm="Contenido restringido"');
     header('HTTP/1.0 401 Unauthorized'); // Envía un error de acceso no autorizado.
     echo "Usuario no reconocido!";

@@ -17,6 +17,18 @@
             <h2>Proyecto Tema 5</h2>
         </header>
         <main>
+            <div class="db">
+                <h3>Scripts de la base de datos</h3>
+                <!-- Explotación 
+                <ul>
+                    <li><a target="_blank" href="scriptDB/CreaDAW2IMGDBDepartamentosExplotacion.php">Creación</a></li>
+                    <li><a target="_blank" href="scriptDB/CargaInicialDAW204DBDepartamentosExplotacion.php">Carga inicial</a></li>
+                    <li><a target="_blank" href="scriptDB/BorraDAW204DBDepartamentosExplotacion.php">Eliminación</a></li>
+                </ul>
+                -->
+                <!-- Desarrollo -->
+                <a target="_blank" href="mostrarcodigo/mostrarCodigoConfig.php">Ficheros de configuración</a>
+            </div>
             <table>
                 <tr>
                     <th>Enunciado</th>

@@ -10,7 +10,7 @@
 /*
 // Desarrollo - sauces.
 define('HOST', 'mysql:host=daw204.sauces.local;dbname=DB204DWESProyectoTema5');
-define('USER', 'user204DWESProyectoTema5');
+define('USER', 'User204DWESProyectoTema5');
 define('PASSWORD', 'paso');
  * 
  */
@@ -25,7 +25,7 @@ define('PASSWORD', 'P@ssw0rd');
 
 // Desarrollo - Casa.
 define('HOST', 'mysql:host=192.168.1.30;dbname=DB204DWESProyectoTema5');
-define('USER', 'user204DWESProyectoTema5');
+define('USER', 'User204DWESProyectoTema5');
 define('PASSWORD', 'paso');
 
 

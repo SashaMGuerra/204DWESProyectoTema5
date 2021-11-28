@@ -14,6 +14,7 @@ header, main{
     margin: 5px;
 }
 
+
 /* Estilo del footer */
 /* Para mantener el footer abajo */
 html, body {
@@ -59,4 +60,10 @@ a.volver{
     padding: 7px;
     position: absolute;
     top: 5px; right: 5px;
+}
+
+
+/*Enlaces*/
+a{
+    text-decoration: none;
 }
