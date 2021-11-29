@@ -27,13 +27,35 @@ table tr:not(:first-child) > *{
 }
 
 div.db{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
     text-align: center;
 }
 div.db > *{
-    margin: 5px;
+    margin: 0;
     padding: 0;
 }
+
+div.db a{
+    text-transform: uppercase;
+    display: block;
+    font-size: small;
+    box-sizing: border-box;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 0;
+}
+div.db a:hover{
+    background-color: black;
+    color: white;
+}
+
+div.db > a{
+    margin: 10px 5px 0;
+}
 ul.scriptsDB{
+    margin-top: 5px;
     list-style: none;
     display: flex;
     align-content: center;
@@ -41,10 +63,8 @@ ul.scriptsDB{
 }
 ul.scriptsDB li{
     flex-grow: 1;
+    margin: 0 5px;
 }
 ul.scriptsDB li a{
-    display: block;
-    background-color: green;
     width: 100%;
-    padding: 20px 0;
 }
