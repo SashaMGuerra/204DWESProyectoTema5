@@ -33,3 +33,18 @@ div.db > *{
     margin: 5px;
     padding: 0;
 }
+ul.scriptsDB{
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+ul.scriptsDB li{
+    flex-grow: 1;
+}
+ul.scriptsDB li a{
+    display: block;
+    background-color: green;
+    width: 100%;
+    padding: 20px 0;
+}
