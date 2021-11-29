@@ -25,7 +25,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
         $oDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Query de selección.
-        $sSelect = "SELECT T01_CodUsuario, T01_Password FROM T01_Usuario WHERE T01_CodUsuario='{$_SERVER['PHP_AUTH_USER']}'";
+        $sSelect = "SELECT T01_Password FROM T01_Usuario WHERE T01_CodUsuario='{$_SERVER['PHP_AUTH_USER']}'";
 
         // Preparación y ejecución de la consulta.
         $oResultadoSelect = $oDB->prepare($sSelect);
@@ -57,7 +57,7 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
         // Query de actualización.
         $sUpdate = <<<QUERY
                 UPDATE T01_Usuario SET T01_NumConexiones=T01_NumConexiones+1,
-                T01_FechaHoraUltimaConexion = '{$oDateTime->format(DATE_W3C)}'
+                T01_FechaHoraUltimaConexion = '{$oDateTime->format("y-m-d h:i:s")}'
                 WHERE T01_CodUsuario='{$_SERVER['PHP_AUTH_USER']}'
         QUERY;
 

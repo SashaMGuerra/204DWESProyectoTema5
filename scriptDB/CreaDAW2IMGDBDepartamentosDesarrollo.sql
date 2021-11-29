@@ -32,7 +32,3 @@ CREATE TABLE IF NOT EXISTS T02_Departamento(
 /* Creación del usuario */
 CREATE USER IF NOT EXISTS 'User204DWESProyectoTema5'@'%' IDENTIFIED BY 'paso';
 GRANT ALL ON DB204DWESProyectoTema5.* TO 'User204DWESProyectoTema5'@'%';
-
-/* Trigger para la codificación de contraseñas al ser introducido un usuario */
-CREATE TRIGGER codificarPASSWORD BEFORE INSERT ON T01_Usuario
-FOR EACH ROW SET NEW.T01_Password = SHA2(CONCAT(NEW.T01_CodUsuario, NEW.T01_Password), 256);
